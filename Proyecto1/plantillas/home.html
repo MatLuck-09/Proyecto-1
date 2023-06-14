@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder home</title>
+</head>
+<body>
+    
+    <p>Hola estamos probando templates</p>
+    <p style="color: brown;">Mi nombre es: {{nombre}}</p>
+    <p style="color: red;">Mi apellido es: {{apellido}}</p>
+
+    <div style="background-color: yellow;">
+
+        <p>Lista de estudiantes</p>
+
+        <p>
+
+            {% for name in namelist %}
+
+                {% if name == "Lucas" %}
+                    <p style="color: green;">{{name}}</p>
+                {% else %}
+                    <p style="color: black;">{{name}}</p>
+                {% endif %}
+
+            {% endfor %}
+
+        </p>
+    </div>
+
+
+</body>
+</html>
